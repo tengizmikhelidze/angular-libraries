@@ -24,7 +24,8 @@
     "angular internationalize",
     "angular transliteration",
     "ngx transliteration",
-    "ngx-transliteration"
+    "ngx-transliteration",
+    "georgian transliteration"
   ],
   "homepage": "https://github.com/tengizmikhelidze/angular-libraries"
 }
