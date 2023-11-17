@@ -8,7 +8,6 @@ import {FromTo} from "./consts/from-to.const";
 export class NgxTransliterationDirective {
   @Input() transliterationOptions: TransliterationOptions = {
     to: "geo",
-    from: 'lat'
   }
   constructor(private el: ElementRef<HTMLInputElement>) {
     el.nativeElement.addEventListener('keydown', this.onKeyDown.bind(this));
@@ -22,6 +21,9 @@ export class NgxTransliterationDirective {
   }
 
   transformFromTo(event: KeyboardEvent, language: Object): string{
+    let findASCII = language[event.key.charCodeAt(0).toString() as keyof typeof language] as unknown as string;
+    if(!!findASCII) return findASCII;
+
     return language[event.key as keyof typeof language] as unknown as string || event.key;
   }
 
@@ -32,7 +34,7 @@ export class NgxTransliterationDirective {
   findCorrectEnum() : Object {
     if(this.transliterationOptions.language) return this.transliterationOptions.language;
 
-    let findEnum = FromTo[this.transliterationOptions.from + this.transliterationOptions.to as keyof typeof FromTo]
+    let findEnum = FromTo[this.transliterationOptions.to as keyof typeof FromTo]
     if(!!findEnum) return findEnum;
 
     return {}

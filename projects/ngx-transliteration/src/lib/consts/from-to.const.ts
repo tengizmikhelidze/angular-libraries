@@ -1,5 +1,5 @@
-import {LatToGeorgianConst} from "./latToGeorgianConst";
+import {GeorgianConst} from "./georgianConst";
 
 export const FromTo = {
-  'latgeo' : LatToGeorgianConst
+  'geo' : GeorgianConst
 }

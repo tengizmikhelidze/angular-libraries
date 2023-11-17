@@ -1,6 +1,6 @@
 {
   "name": "ngx-transliteration",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -8,5 +8,13 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "helper for input field to transliterate typed characters",
+  "author": "Tengiz Mikhelidze",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tengizmikhelidze/angular-libraries"
+  },
+  "homepage": "https://github.com/tengizmikhelidze/angular-libraries"
 }
