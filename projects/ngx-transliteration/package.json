@@ -1,6 +1,6 @@
 {
   "name": "ngx-transliteration",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -16,5 +16,15 @@
     "type": "git",
     "url": "https://github.com/tengizmikhelidze/angular-libraries"
   },
+  "keywords": [
+    "transliteration",
+    "translate",
+    "input",
+    "angular translate",
+    "angular internationalize",
+    "angular transliteration",
+    "ngx transliteration",
+    "ngx-transliteration"
+  ],
   "homepage": "https://github.com/tengizmikhelidze/angular-libraries"
 }
