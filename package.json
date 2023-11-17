@@ -1,6 +1,6 @@
 {
   "name": "angular-libraries",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +9,13 @@
     "test": "ng test"
   },
   "private": true,
+  "description": "helper for input field to transliterate typed characters",
+  "author": "Tengiz Mikhelidze",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tengizmikhelidze/angular-libraries"
+  },
   "dependencies": {
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
