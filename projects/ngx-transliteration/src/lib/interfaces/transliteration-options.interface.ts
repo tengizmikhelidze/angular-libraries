@@ -1,6 +1,6 @@
 import {Language} from "./languages.interface";
 
 export interface TransliterationOptions {
-  to: "lat" | 'geo',
+  to: "eng" | 'geo',
   language?: Language
 }

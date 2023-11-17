@@ -1,6 +1,6 @@
 import {Language} from "../interfaces/languages.interface";
 
-export const GeorgianConst: Language = {
+export const Georgian: Language = {
   'a' : 'ა',
   'b' : 'ბ',
   'g' : 'გ',
