@@ -18,6 +18,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "mixelidzetengizi@gmail.com"
+          git config --global user.name "tengizmikhelidze"
+
       - name: Build Transliteration
         run: npm run build:transliteration
 
@@ -30,5 +35,3 @@ jobs:
           git add .
           git commit -m "Deploy to GitHub Pages"
           git push
-          git config --global user.email "mixelidzetengizi@gmail.com"
-          git config --global user.name "Tengiz Mikhelidze"
