@@ -7,7 +7,8 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:transliteration": "ng build ngx-transliteration"
+    "build:transliteration": "ng build ngx-transliteration",
+    "deploy-gh": "ng build --configuration github --base-href=/0.9.x/"
   },
   "private": true,
   "dependencies": {
