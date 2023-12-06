@@ -18,8 +18,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Build Transliteration
+        run: npm run build:transliteration
+
       - name: Build Angular App
-        run: npm run build --prod
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         run: |
