@@ -25,4 +25,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: frontend/dist/angular-libraries
+        FOLDER: dist/angular-libraries
