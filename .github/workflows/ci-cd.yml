@@ -30,9 +30,10 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           mv ./docs/* ./
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git remote add origin_with_token https://$GH_TOKEN@github.com/tengizmikhelidze/angular-libraries.git
-          git push origin_with_token
+          git push
