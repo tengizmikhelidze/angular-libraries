@@ -1,42 +1,29 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
-on: push
-
+on: [push]
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Set up Git
-        uses: actions/setup-git@v2
-
-      - name: Configure Git
-        run: |
-          git config --global user.email "mixelidzetengizi@gmail.com"
-          git config --global user.name "tengizmikhelidze"
-
-      - name: Build Transliteration
-        run: npm run build:transliteration
-
-      - name: Build Angular App
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          mv ./docs/* ./
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push gh-pages
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: actions/setup-node@v1 #this installs node and npm for us
+      with:
+        node-version: '14.x'
+    - uses: actions/cache@v1 # this allows for re-using node_modules caching, making builds a bit faster.
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-    
+    - name: Build
+      working-directory: frontend
+      run: |
+        npm install
+        npm run-script deploy-gh
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: frontend/dist/angular-libraries
