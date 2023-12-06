@@ -2,8 +2,9 @@
 
 If you want to type in input or textarea field with only specific language you can use this npm package.
 
-#### Directive only works on Input Fields. `How to use Directive:`
+#### Directive only works on Input or Textarea Fields. `How to use Directive:`
 > examples: 
+> 
 > `<input transliterate [transliterationOptions]="{to: 'geo'}"`
 > 
 > `<input transliterate [transliterationOptions]="{to: 'geo', language: {a: 'ა'}"`>
