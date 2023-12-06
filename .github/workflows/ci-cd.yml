@@ -34,4 +34,5 @@ jobs:
           mv ./docs/* ./
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push
+          git remote add origin_with_token https://$GH_TOKEN@github.com/tengizmikhelidze/angular-libraries.git
+          git push origin_with_token
