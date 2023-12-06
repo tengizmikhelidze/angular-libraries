@@ -18,6 +18,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Set up Git
+        uses: actions/setup-git@v2
+
       - name: Configure Git
         run: |
           git config --global user.email "mixelidzetengizi@gmail.com"
@@ -36,4 +39,4 @@ jobs:
           mv ./docs/* ./
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push
+          git push gh-pages
