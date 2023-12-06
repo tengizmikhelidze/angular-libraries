@@ -1,19 +1,21 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import {NgxTransliterationModule} from "../../projects/ngx-transliteration/src/lib/ngx-transliteration.module";
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {SidebarComponent} from "../shared/sidebar/sidebar.component";
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgxTransliterationModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SidebarComponent,
+        FontAwesomeModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

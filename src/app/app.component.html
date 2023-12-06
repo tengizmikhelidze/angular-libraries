@@ -1,9 +1,11 @@
-<div>
-  <label for="toGeo">to Georgian: </label>
-  <input id="toGeo" transliterate [transliterationOptions]="{to: 'geo'}">
+<div class="content-wrapper">
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="main">
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
 </div>
-<br>
-<div>
-  <label for="toEng">to English: </label>
-  <input id="toEng" transliterate [transliterationOptions]="{to: 'eng'}">
-</div>
+

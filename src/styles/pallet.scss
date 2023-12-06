@@ -1,0 +1,43 @@
+$background_body_dark: #222831;
+$sidebar-background_dark: #F9FAFF;
+$sidebar-background-active_dark: #1F5EFF;
+$sidebar-icon-background_dark: #ECEEF5;
+$sidebar-color_dark: #3D3E46;
+$sidebar-color-icon_dark: #7B849C;
+
+$background_body_light: #ffffff;
+$sidebar-background_light: #F9FAFF;
+$sidebar-background-active_light: #1F5EFF;
+$sidebar-icon-background_light: #ECEEF5;
+$sidebar-color_light: #3D3E46;
+$sidebar-color-icon_light: #7B849C;
+// mixin that enables css variables in light mode
+@mixin lighten() {
+  --background_body: #{$background_body_light};
+  --sidebar-background: #{$sidebar-background_light};
+  --sidebar-background-active: #{$sidebar-background-active_light};
+  --sidebar-icon-background: #{$sidebar-icon-background_light};
+  --sidebar-color: #{$sidebar-color_light};
+  --sidebar-color-icon: #{$sidebar-color-icon_light};
+}
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  --background_body: #{$background_body_dark};
+  --sidebar-background: #{$sidebar-background_dark};
+  --sidebar-background-active: #{$sidebar-background-active_dark};
+  --sidebar-icon-background: #{$sidebar-icon-background_dark};
+  --sidebar-color: #{$sidebar-color_dark};
+  --sidebar-color-icon: #{$sidebar-color-icon_dark};
+}
+
+body {
+  @include lighten();
+  background-color: var(--background_body);
+}
+
+body.dark {
+  @include darken();
+  background-color: var(--background_body);
+}
+

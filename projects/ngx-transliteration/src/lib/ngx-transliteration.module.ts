@@ -1,15 +1,23 @@
 import {NgModule} from '@angular/core';
-import { NgxTransliterationDirective } from './ngx-transliteration.directive';
+import {
+  NgxTransliterationDirective,
+  NgxTransliterationInputDirective,
+  NgxTransliterationTextareaDirective
+} from './ngx-transliteration.directive';
 
 
 @NgModule({
   declarations: [
-    NgxTransliterationDirective
+    NgxTransliterationDirective,
+    NgxTransliterationInputDirective,
+    NgxTransliterationTextareaDirective
   ],
   imports: [
   ],
   exports: [
-    NgxTransliterationDirective
+    NgxTransliterationDirective,
+    NgxTransliterationInputDirective,
+    NgxTransliterationTextareaDirective
   ]
 })
 export class NgxTransliterationModule { }

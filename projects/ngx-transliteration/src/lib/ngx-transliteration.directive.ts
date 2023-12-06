@@ -3,7 +3,7 @@ import {TransliterationOptions} from "./interfaces/transliteration-options.inter
 import {FromTo} from "./consts/from-to.const";
 
 @Directive({
-  selector: 'input[transliterate]'
+  selector: 'transliteration'
 })
 export class NgxTransliterationDirective {
   @Input() transliterationOptions: TransliterationOptions = {
@@ -45,3 +45,12 @@ export class NgxTransliterationDirective {
     this.el.nativeElement.value = this.el.nativeElement.value.slice(0,lastCharIndex) + char;
   }
 }
+@Directive({
+  selector: 'input[transliterate]'
+})
+export class NgxTransliterationInputDirective extends NgxTransliterationDirective{}
+
+@Directive({
+  selector: 'textarea[transliterate]'
+})
+export class NgxTransliterationTextareaDirective extends NgxTransliterationDirective{}
