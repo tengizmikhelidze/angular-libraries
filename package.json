@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:transliteration": "ng build ngx-transliteration",
-    "deploy-gh": "npm run build:transliteration && ng build --configuration production --base-href=/"
+    "deploy-gh": "npm run build:transliteration && ng build --configuration production --base-href=/angular-libraries/"
   },
   "private": true,
   "dependencies": {
