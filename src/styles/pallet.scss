@@ -4,6 +4,7 @@ $sidebar-background-active_dark: #1F5EFF;
 $sidebar-icon-background_dark: #ECEEF5;
 $sidebar-color_dark: #3D3E46;
 $sidebar-color-icon_dark: #7B849C;
+$color-text_dark: #ffffff;
 
 $background_body_light: #ffffff;
 $sidebar-background_light: #F9FAFF;
@@ -11,6 +12,7 @@ $sidebar-background-active_light: #1F5EFF;
 $sidebar-icon-background_light: #ECEEF5;
 $sidebar-color_light: #3D3E46;
 $sidebar-color-icon_light: #7B849C;
+$color-text_light: #3D3E46;
 // mixin that enables css variables in light mode
 @mixin lighten() {
   --background_body: #{$background_body_light};
@@ -19,6 +21,8 @@ $sidebar-color-icon_light: #7B849C;
   --sidebar-icon-background: #{$sidebar-icon-background_light};
   --sidebar-color: #{$sidebar-color_light};
   --sidebar-color-icon: #{$sidebar-color-icon_light};
+
+  --color-text: #{$color-text_light}
 }
 
 // mixin that enables css variables in dark mode
@@ -29,6 +33,8 @@ $sidebar-color-icon_light: #7B849C;
   --sidebar-icon-background: #{$sidebar-icon-background_dark};
   --sidebar-color: #{$sidebar-color_dark};
   --sidebar-color-icon: #{$sidebar-color-icon_dark};
+
+  --color-text: #{$color-text_dark}
 }
 
 body {

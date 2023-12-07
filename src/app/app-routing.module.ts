@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {AppComponent} from "./app.component";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
@@ -9,12 +8,12 @@ const routes: Routes = [
     redirectTo: 'home'
   },
   {
-    path: 'home',
-    component: AppComponent
-  },
-  {
     path: 'transliteration',
     loadChildren: () => import('./transliteration/transliteration.module').then((m)=>m.TransliterationModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m)=>m.HomeModule)
   }
 ];
 
