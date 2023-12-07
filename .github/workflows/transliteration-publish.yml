@@ -1,4 +1,4 @@
-name: Build and Publish Transliteration
+name: Transliteration CI-CD
 
 on: [push]
 jobs:
@@ -20,5 +20,5 @@ jobs:
         run: |
           npm install
           npm run-script build:transliteration
-          mv dist/ngx-transliteration
+          cd dist/ngx-transliteration
           npm publish
