@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul.interest-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+
+  li {
+    min-width: 120px;
+    box-sizing: border-box;
+    height: 150px;
+    background-color: var(--sidebar-icon-background);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--color-text);
+  }
+}
