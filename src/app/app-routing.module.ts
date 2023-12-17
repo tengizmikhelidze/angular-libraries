@@ -8,10 +8,6 @@ const routes: Routes = [
     redirectTo: 'home'
   },
   {
-    path: 'transliteration',
-    loadChildren: () => import('./transliteration/transliteration.module').then((m)=>m.TransliterationModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m)=>m.HomeModule)
   }
