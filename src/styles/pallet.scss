@@ -1,18 +1,18 @@
-$background_body_10_dark: #222831;
+$background_body_10_dark: #ffffff;
 $background_body_20_dark: #11181F;
 $background_button_on_10_dark: #ffffff;
 $background_button_on_20_dark: #ffffff;
 $border_button_on_10_dark: #ffffff;
-$color_on_body_10_dark: #ffffff;
-$color_on_body_20_dark: #11181F;
+$color_on_body_10_dark: #11181F;
+$color_on_body_20_dark: #ffffff;
 
 $background_body_10_light: #ffffff;
 $background_body_20_light: #11181F;
 $background_button_on_10_light: #ffffff;
 $background_button_on_20_light: #ffffff;
 $border_button_on_10_light: #ffffff;
-$color_on_body_10_light: #ffffff;
-$color_on_body_20_light: #11181F;
+$color_on_body_10_light: #11181F;
+$color_on_body_20_light: #ffffff;
 
 // mixin that enables css variables in light mode
 @mixin lighten() {

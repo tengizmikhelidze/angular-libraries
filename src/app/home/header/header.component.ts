@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  readonly facebookIcon = faFacebook
-  readonly instagramIcon = faInstagram
+  readonly environment = environment;
+  readonly facebookIcon = faFacebook;
+  readonly instagramIcon = faInstagram;
 }

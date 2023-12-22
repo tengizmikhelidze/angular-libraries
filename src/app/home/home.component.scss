@@ -2,35 +2,6 @@ h1 {
   font-size: var(--font-size--xx-large);
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-ul.interest-list{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 20px;
-
-  li {
-    min-width: 120px;
-    box-sizing: border-box;
-    height: 150px;
-    background-color: var(--sidebar-icon-background);
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 0 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    color: var(--color-text);
-  }
-}
-
 main {
   display: flex;
   align-items: center;
@@ -42,7 +13,7 @@ main {
   width: 100%;
 
   background: var(--background_body_20);
-  color: var(--color_on_body_10);
+  color: var(--color_on_body_20);
 
   section {
     max-width: var(--max-width);
@@ -87,7 +58,7 @@ main {
               &-2 {
                 background: none;
                 border: 1px solid var(--border_button_on_10);
-                color: var(--color_on_body_10);
+                color: var(--color_on_body_20);
                 font-weight: 500;
               }
             }

@@ -25,11 +25,13 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--page-spacing-50);
+    cursor: pointer;
   }
 
   h1 {
     font-weight: 600;
     letter-spacing: 1px;
+    color: var(--color_on_body_10);
   }
 
   img {

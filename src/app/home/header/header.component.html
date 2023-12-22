@@ -1,20 +1,26 @@
 <div class="header-wrapper">
   <nav class="header-content">
-    <div class="header-left-box header-box">
-      <img src="/assets/images/site-logo.jpg" alt="logo">
-      <h1>Angular Georgia</h1>
-    </div>
+    <a [href]="'#'">
+      <div class="header-left-box header-box">
+        <img src="/assets/images/site-logo.jpg" alt="logo">
+        <h1>Angular Georgia</h1>
+      </div>
+    </a>
     <div class="header-right-box header-box">
       <ul class="socials">
         <li>
-          <button>
-            <fa-icon [styles]="{width: '1.25rem'}" [icon]="facebookIcon"></fa-icon>
-          </button>
+          <a [href]="environment.facebookUrl" target="_blank">
+            <button>
+              <fa-icon [styles]="{width: '1.25rem'}" [icon]="facebookIcon"></fa-icon>
+            </button>
+          </a>
         </li>
         <li>
-          <button>
-            <fa-icon [styles]="{width: '1.25rem'}" [icon]="instagramIcon"></fa-icon>
-          </button>
+          <a [href]="environment.facebookUrl" target="_blank">
+            <button>
+              <fa-icon [styles]="{width: '1.25rem'}" [icon]="instagramIcon"></fa-icon>
+            </button>
+          </a>
         </li>
       </ul>
     </div>
