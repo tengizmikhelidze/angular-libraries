@@ -11,7 +11,7 @@ main {
   box-sizing: border-box;
 
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   background: var(--background_body_10);
   color: var(--color_on_body_10);
@@ -52,6 +52,18 @@ main {
           border: 1px solid transparent;
           border-radius: var(--page-spacing-40);
         }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  main {
+    section {
+      text-align: center;
+      ul {
+        flex-direction: column;
       }
     }
   }
