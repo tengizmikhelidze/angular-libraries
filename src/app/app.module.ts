@@ -20,4 +20,5 @@ import {NgOptimizedImage} from "@angular/common";
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  
 }
