@@ -1,7 +1,51 @@
-:root {
-  --page-spacing-30: 0.25rem;
-  --page-spacing-50: 1.75rem;
+$page-spacing-30: 0.25rem;
+$page-spacing-40: 1rem;
+$page-spacing-50: 1.75rem;
+$page-spacing-70: clamp(3.5rem, 7.3943662vw, 5.25rem);
 
-  --max-width: 1200px;
-  --min-width: 600px;
+$max-width: 1200px;
+$min-width: 600px;
+
+:root {
+  --page-spacing-30: #{$page-spacing-30};
+  --page-spacing-40: #{$page-spacing-40};
+  --page-spacing-50: #{$page-spacing-50};
+  --page-spacing-70: #{$page-spacing-70};
+
+  --max-width: #{$max-width};
+  --min-width: #{$min-width};
+
+  --font-size--s-large: clamp(0.825rem, 0.825rem + ((1vw - 0.2rem) * 0.433), 1.0625rem);
+  --font-size--m-large: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.455), 1.25rem);
+  --font-size--l-large: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.569), 1.563rem);
+  --font-size--x-large: clamp(1.563rem, 1.563rem + ((1vw - 0.2rem) * 0.709), 1.953rem);
+  --font-size--xx-large: clamp(1.953rem, 1.953rem + ((1vw - 0.2rem) * 0.887), 2.441rem);
+}
+
+@media all and (max-width: 1200px) {
+  $max-width: 800;
+  $min-width: 400;
+
+  :root {
+    --max-width: #{$max-width};
+    --min-width: #{$min-width};
+  }
+}
+@media all and (max-width: 800px) {
+  $max-width: 400;
+  $min-width: 200;
+
+  :root {
+    --max-width: #{$max-width};
+    --min-width: #{$min-width};
+  }
+}
+@media all and (max-width: 400px) {
+  $max-width: 200;
+  $min-width: 100;
+
+  :root {
+    --max-width: #{$max-width};
+    --min-width: #{$min-width};
+  }
 }

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {faLanguage} from "@fortawesome/free-solid-svg-icons";
+import {Component} from '@angular/core';
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,6 @@ import {faLanguage} from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  readonly transliteration = faLanguage;
+  readonly environment = environment
 
 }

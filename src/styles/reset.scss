@@ -55,8 +55,11 @@ table {
 }
 a {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color_on_body_10);
 }
 body {
   background-color: var(--background_body);
+}
+button {
+  cursor: pointer;
 }

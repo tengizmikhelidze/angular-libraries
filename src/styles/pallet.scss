@@ -1,40 +1,39 @@
-$background_body_dark: #222831;
-$sidebar-background_dark: #F9FAFF;
-$sidebar-background-active_dark: #1F5EFF;
-$sidebar-icon-background_dark: #ECEEF5;
-$sidebar-color_dark: #3D3E46;
-$sidebar-color-icon_dark: #7B849C;
-$color-text_dark: #ffffff;
+$background_body_10_dark: #222831;
+$background_body_20_dark: #11181F;
+$background_button_on_10_dark: #ffffff;
+$background_button_on_20_dark: #ffffff;
+$border_button_on_10_dark: #ffffff;
+$color_on_body_10_dark: #ffffff;
+$color_on_body_20_dark: #11181F;
 
-$background_body_light: #ffffff;
-$sidebar-background_light: #F9FAFF;
-$sidebar-background-active_light: #1F5EFF;
-$sidebar-icon-background_light: #ECEEF5;
-$sidebar-color_light: #3D3E46;
-$sidebar-color-icon_light: #7B849C;
-$color-text_light: #3D3E46;
+$background_body_10_light: #ffffff;
+$background_body_20_light: #11181F;
+$background_button_on_10_light: #ffffff;
+$background_button_on_20_light: #ffffff;
+$border_button_on_10_light: #ffffff;
+$color_on_body_10_light: #ffffff;
+$color_on_body_20_light: #11181F;
+
 // mixin that enables css variables in light mode
 @mixin lighten() {
-  --background_body: #{$background_body_light};
-  --sidebar-background: #{$sidebar-background_light};
-  --sidebar-background-active: #{$sidebar-background-active_light};
-  --sidebar-icon-background: #{$sidebar-icon-background_light};
-  --sidebar-color: #{$sidebar-color_light};
-  --sidebar-color-icon: #{$sidebar-color-icon_light};
-
-  --color-text: #{$color-text_light}
+  --background_body_10: #{$background_body_10_light};
+  --background_body_20: #{$background_body_20_light};
+  --background_button_on_10: #{$background_button_on_10_light};
+  --background_button_on_20: #{$background_button_on_20_light};
+  --border_button_on_10: #{$border_button_on_10_light};
+  --color_on_body_10: #{$color_on_body_10_light};
+  --color_on_body_20: #{$color_on_body_20_light};
 }
 
 // mixin that enables css variables in dark mode
 @mixin darken() {
-  --background_body: #{$background_body_dark};
-  --sidebar-background: #{$sidebar-background_dark};
-  --sidebar-background-active: #{$sidebar-background-active_dark};
-  --sidebar-icon-background: #{$sidebar-icon-background_dark};
-  --sidebar-color: #{$sidebar-color_dark};
-  --sidebar-color-icon: #{$sidebar-color-icon_dark};
-
-  --color-text: #{$color-text_dark}
+  --background_body_10: #{$background_body_10_dark};
+  --background_body_20: #{$background_body_20_dark};
+  --background_button_on_10: #{$background_button_on_10_dark};
+  --background_button_on_20: #{$background_button_on_20_dark};
+  --border_button_on_10: #{$border_button_on_10_dark};
+  --color_on_body_10: #{$color_on_body_10_dark};
+  --color_on_body_20: #{$color_on_body_20_dark};
 }
 
 body {
