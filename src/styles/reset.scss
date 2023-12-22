@@ -54,6 +54,7 @@ table {
   border-spacing: 0;
 }
 a {
+  -webkit-text-decoration-color: unset;
   text-decoration: none;
   color: var(--color_on_body_10);
 }

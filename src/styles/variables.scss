@@ -2,6 +2,7 @@ $page-spacing-30: 0.25rem;
 $page-spacing-40: 1rem;
 $page-spacing-50: 1.75rem;
 $page-spacing-70: clamp(3.5rem, 7.3943662vw, 5.25rem);
+$page-spacing-80: clamp(5.25rem, 12.3239437vw, 8.75rem);
 
 $max-width: 1200px;
 $min-width: 600px;
@@ -11,6 +12,7 @@ $min-width: 600px;
   --page-spacing-40: #{$page-spacing-40};
   --page-spacing-50: #{$page-spacing-50};
   --page-spacing-70: #{$page-spacing-70};
+  --page-spacing-80: #{$page-spacing-80};
 
   --max-width: #{$max-width};
   --min-width: #{$min-width};
