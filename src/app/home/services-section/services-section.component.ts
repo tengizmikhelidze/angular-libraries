@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {PageServicesList} from "../../../shared/types/page-service.types";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-services-section',
@@ -9,7 +10,7 @@ import {PageServicesList} from "../../../shared/types/page-service.types";
 export class ServicesSectionComponent {
   pageServices: PageServicesList = [
     {
-      href: 'https://www.youtube.com/@AngularGeorgia',
+      href: environment.youtubeUrl,
       imgSrc: 'assets/images/site-logo.jpg',
       title: 'Angular-ის ქართული კურსი',
       target: '_self'

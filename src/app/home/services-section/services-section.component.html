@@ -3,7 +3,7 @@
     <h1>სერვისები</h1>
     <ul>
       <ng-container *ngFor="let pageService of pageServices">
-        <a [href]="pageService.href" [target]="pageService.target">
+        <a [href]="pageService.href" [target]="pageService.target"  rel="noopener">
           <li>
             <img [src]="pageService.imgSrc" alt = service>
             <h2>{{pageService.title}}</h2>

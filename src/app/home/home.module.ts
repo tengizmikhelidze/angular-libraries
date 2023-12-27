@@ -7,6 +7,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {HeaderComponent} from './header/header.component';
 import {DescriptionSectionComponent} from './description-section/description-section.component';
 import {ServicesSectionComponent} from './services-section/services-section.component';
+import {FooterComponent} from "./footer/footer.component";
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {ServicesSectionComponent} from './services-section/services-section.comp
     HomeComponent,
     HeaderComponent,
     DescriptionSectionComponent,
-    ServicesSectionComponent
+    ServicesSectionComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

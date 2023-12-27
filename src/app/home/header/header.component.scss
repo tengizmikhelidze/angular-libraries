@@ -58,6 +58,10 @@
         background: none;
         border: none;
         padding: 0;
+
+        fa-icon {
+          color: var(--background_button_on_10);
+        }
       }
     }
   }
