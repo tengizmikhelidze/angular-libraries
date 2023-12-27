@@ -5,20 +5,21 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgOptimizedImage} from "@angular/common";
+import {AppInitializerModule} from "../app-initializer/app-initializer.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppInitializerModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgOptimizedImage
+    NgOptimizedImage,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+
 }

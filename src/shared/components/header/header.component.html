@@ -1,12 +1,18 @@
 <div class="header-wrapper">
   <nav class="header-content">
-    <a [href]="'#'">
+    <a routerLink="/home">
       <div class="header-left-box header-box">
-        <img src="/assets/images/site-logo.jpg" alt="logo">
+        <img ImgSrcRewrite src="/assets/images/site-logo.jpg" alt="logo">
         <h1>Angular Georgia</h1>
       </div>
     </a>
     <div class="header-right-box header-box">
+      <nav class="menu">
+        <ul>
+          <li routerLink="/home" routerLinkActive="active-menu-link">Home</li>
+          <li routerLink="/features/transliteration" routerLinkActive="active-menu-link">Transliteration</li>
+        </ul>
+      </nav>
       <ul class="socials">
         <li>
           <a [href]="environment.facebookUrl" target="_blank">
@@ -23,6 +29,7 @@
           </a>
         </li>
       </ul>
+      <fa-icon [icon]="burgerMenuIcon" class="burger-menu"></fa-icon>
     </div>
   </nav>
 </div>
