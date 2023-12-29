@@ -28,8 +28,12 @@
             </button>
           </a>
         </li>
+        <li (click)="burgerMenuService.toggleMenu()">
+          <button>
+            <fa-icon [icon]="burgerMenuIcon" class="burger-menu"></fa-icon>
+          </button>
+        </li>
       </ul>
-      <fa-icon [icon]="burgerMenuIcon" class="burger-menu"></fa-icon>
     </div>
   </nav>
 </div>

@@ -1,0 +1,10 @@
+<nav *ngIf="burgerMenuService.toggleBurgerMenu$ | async">
+  <div class="burger-menu-content">
+    <fa-icon [icon]="closeIcon" class="close-burger" (click)="burgerMenuService.toggleMenu()"></fa-icon>
+
+    <ul>
+      <li routerLink="/home" routerLinkActive="active-menu-link" (click)="burgerMenuService.hideMenu()">Home</li>
+      <li routerLink="/features/transliteration" routerLinkActive="active-menu-link" (click)="burgerMenuService.hideMenu()">Transliteration</li>
+    </ul>
+  </div>
+</nav>

@@ -5,6 +5,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {RouterModule} from "@angular/router";
 import {ImgSrcRewriteDirective} from "../../directives/img-src-rewrite.directive";
 import {faBurger} from "@fortawesome/free-solid-svg-icons";
+import {BurgerMenuService} from "../burger-menu/services/burger-menu.service";
 
 @Component({
   selector: 'app-header',
@@ -18,4 +19,7 @@ export class HeaderComponent {
   readonly facebookIcon = faFacebook;
   readonly instagramIcon = faInstagram;
   readonly burgerMenuIcon = faBurger;
+
+  constructor(public burgerMenuService: BurgerMenuService) {
+  }
 }

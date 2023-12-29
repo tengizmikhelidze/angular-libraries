@@ -1,0 +1,40 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0.95;
+
+  padding: var(--page-spacing-50);
+}
+
+.burger-menu-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--page-spacing-50);
+
+    li {
+      font-size: var(--font-size--l-large);
+    }
+  }
+}
+
+.close-burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
