@@ -9,4 +9,8 @@ import {environment} from "../../../environments/environment";
 export class DescriptionSectionComponent {
   readonly environment = environment;
 
+  scroll() {
+    let scroll = document.getElementById("services-scroll")
+    scroll?.scrollIntoView({behavior: 'smooth'})
+  }
 }
