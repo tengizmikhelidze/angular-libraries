@@ -1,0 +1,11 @@
+<div class="dvs-form-control" *ngIf="control">
+  <label [for]="inputId" *ngIf="label" [class.required]="isRequired">{{
+    label
+    }}</label>
+  <input
+    [required]="isRequired"
+    [type]="'number'"
+    [id]="inputId"
+    [formControl]="control"
+  />
+</div>

@@ -13,8 +13,9 @@
     "sourceMap": true,
     "paths": {
       "ngx-transliteration": [
-        "dist/ngx-transliteration"
-      ]
+        "dist/ngx-transliteration",
+      ],
+      "@environments/*": ["src/environments/*"]
     },
     "declaration": false,
     "downlevelIteration": true,
