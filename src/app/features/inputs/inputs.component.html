@@ -1,3 +1,5 @@
 <form [formGroup]="form">
-  <app-number-input formControlName="numberInput"></app-number-input>
+  <app-number-input-formControl formControlName="numberInput"></app-number-input-formControl>
 </form>
+
+<app-number-input-ngModel [(ngModel)]="ngModelValue" [disabled]="true"></app-number-input-ngModel>

@@ -14,7 +14,7 @@ import {distinctUntilChanged, startWith, Subject, takeUntil, tap} from 'rxjs';
   selector: '[appControlValueAccessor]',
   standalone: true,
 })
-export class ControlValueAccessorDirective<T>
+export class FormControlControlValueAccessorDirective<T>
   implements ControlValueAccessor, OnInit
 {
   control!: FormControl<T | null>;
